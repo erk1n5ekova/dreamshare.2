@@ -157,3 +157,71 @@ a {
     flex-direction: column;
   }
 }
+.biograhpy__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.biograhpy__header-title {
+  color: #444;
+  font-size: 22px;
+  font-weight: 700;
+}
+.biograhpy__info-title {
+  width: 221px;
+  height: 18px;
+  color: #444;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px;
+}
+.biograhpy__info-text {
+  width: 221px;
+  height: 57px;
+  color: #666;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+}
+.biograhpy-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.biograhpy-group {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.biograhpy__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+@media screen and (max-width: 920px) {
+  .biograhpy-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .biograhpy-group img {
+    width: 122px;
+    height: 122px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .biograhpy-block {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .biograhpy-group img {
+    width: 126px;
+    height: 126px;
+  }
+}
